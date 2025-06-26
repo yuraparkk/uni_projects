@@ -7,7 +7,7 @@ import datetime
 import os
 
 # RESUME OPTION
-RESUME = True
+RESUME = False
 # path to the Q-table 
 CHECKPOINT = "q_table_20250624-163727.pkl" 
 OPPONENT_MODE = 'random' # 'learning' or 'random'
@@ -17,7 +17,7 @@ ALPHA_START = 0.1
 ALPHA_END = 0.01
 GAMMA = 0.99
 EPSILON_NEW = 0.2      # epsilon for a fresh training run
-EPSILON_RESUME = 0.2  # epsilon when resuming 
+EPSILON_RESUME = 0.15  # epsilon when resuming 
 EPISODES = 10000
 # EPSILON BURST
 EPSILON_RESET_FREQUENCY = 1500 
